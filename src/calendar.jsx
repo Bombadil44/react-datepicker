@@ -262,7 +262,7 @@ var Calendar = React.createClass({
 
   renderMonths () {
     var monthList = []
-    for (var i = 0; i < this.props.monthsShown; ++i) {
+    for (var i = 0; i < this.props.monthsShown + 2; ++i) {
       var monthDate = this.state.date.clone().add(i, 'M')
       var monthKey = `month-${i}`
       monthList.push(
